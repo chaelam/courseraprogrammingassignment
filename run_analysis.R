@@ -37,7 +37,6 @@ data_set<-data.frame(bind_rows(train_data,test_data))
 final_data_set<-inner_join(data_set,activity_labels,by="activity_number")
 
 #name x data set columns with features list
-final_data_set<-inner_join(data_set,activity_labels,by="activity_number")
 names(final_data_set) <- c(as.character(features[,2]),"activity_number","subject",
                            "activity")
 
