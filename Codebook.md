@@ -56,7 +56,9 @@ x\_train&lt;-read.table("./UCI HAR Dataset/train/X\_train.txt") y\_train&lt;-rea
 
 x\_test&lt;-read.table("./UCI HAR Dataset/test/X\_test.txt") y\_test&lt;-read.table("./UCI HAR Dataset/test/y\_test.txt", col.names = c("activity\_number")) sub\_test&lt;-read.table("./UCI HAR Dataset/test/subject\_test.txt", col.names = c("subject")) test\_data&lt;-cbind(x\_test,y\_test,sub\_test)
 
-Furthermore, the data files for the activity and features (measurement) names were provided. This will only simply be read for now. The read.table codes for these files are shown below activity\_labels&lt;-read.table("./UCI HAR Dataset/activity\_labels.txt", col.names = c("activity\_number","activity")) features&lt;-read.table("./UCI HAR Dataset./features.txt")
+Furthermore, the data files for the activity and features (measurement) names were provided. This will only simply be read for now. The read.table codes for these files are shown below 
+
+activity\_labels&lt;-read.table("./UCI HAR Dataset/activity\_labels.txt", col.names = c("activity\_number","activity")) features&lt;-read.table("./UCI HAR Dataset./features.txt")
 
 #### Merging Training and Testing Dataset
 
